@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Redis-SpringBoot
+  data:
+    redis:
+      cluster:
+        nodes:
+          - 127.0.0.1:7000
+          - 127.0.0.1:7001
+          - 127.0.0.1:7002
+          - 127.0.0.1:7003
+          - 127.0.0.1:7004
+          - 127.0.0.1:7005
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
