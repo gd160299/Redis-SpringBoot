@@ -1,4 +1,4 @@
-package org.pj.redisspringboot.model;
+package org.pj.redisspringboot.Model.Request;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
