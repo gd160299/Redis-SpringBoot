@@ -1,9 +1,9 @@
-package org.pj.redisspringboot.Model.Response;
+package org.pj.redisspringboot.model.response;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
+import java.sql.Timestamp;
 
 @Getter
 @Setter
@@ -11,11 +11,11 @@ public class ApiResponse<T> {
 
     private String message;
     private T data;
-    private LocalDateTime timestamp;
+    private Timestamp responseTime;
 
     public ApiResponse(String message, T data) {
         this.message = message;
         this.data = data;
-        this.timestamp = LocalDateTime.now();
+        this.responseTime = new Timestamp(System.currentTimeMillis());
     }
 }

@@ -1,6 +1,6 @@
-package org.pj.redisspringboot.Repository;
+package org.pj.redisspringboot.repository;
 
-import org.pj.redisspringboot.Model.Request.User;
+import org.pj.redisspringboot.model.request.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
