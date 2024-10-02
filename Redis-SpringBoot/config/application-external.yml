@@ -1,0 +1,8 @@
+server:
+  port: 8082
+redis:
+  lettuce:
+    pool:
+      max-active: 8
+      max-idle: 8
+      min-idle: 0

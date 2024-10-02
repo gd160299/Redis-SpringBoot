@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: ${server.port:8080}
 spring:
   application:
     name: Redis-SpringBoot
@@ -15,6 +15,8 @@ spring:
           - 127.0.0.1:7005
       lettuce:
         pool:
-          max-active: 8
-          max-idle: 8
-          min-idle: 0
+          max-active: ${redis.lettuce.pool.max-active:8}
+          max-idle: ${redis.lettuce.pool.max-idle:8}
+          min-idle: ${redis.lettuce.pool.min-idle:0}
+  config:
+    import: file:./config/application-external.yml
